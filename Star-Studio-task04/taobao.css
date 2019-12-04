@@ -348,6 +348,7 @@ a{
     width: 50px;
     display: inline-block;
     float: left;
+    text-align: center;
 }
 .info li:nth-child(5) div{
     height: 20px;
