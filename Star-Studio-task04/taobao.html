@@ -7,13 +7,181 @@
     <script src="taobao.js"></script>
 </head>
 <body>
-<header>
-    <div id="navigator"></div>
-    <div id="logo_and_search"></div>
-    <div id="pages_and_pay"></div>
-    <div id="table_head"></div>
-</header>
+<div id="navigator"><div>
+    <ul class="left_list">
+        <li>
+            🐎云<img src="img/more.png" alt="下拉" class="more" />
+        </li>
+        <li>
+            <img src="img/消息.png" alt="消息" class="icon" />
+            消息<span class="orange_red small">2</span>
+            <img src="img/more.png" alt="下拉" class="more" />
+        </li>
+        <li>
+            <a href="">手机淘宝</a>
+        </li>
+    </ul>
+    <ul class="right_list">
+        <li>
+            <a href="">淘宝网首页</a>
+        </li>
+        <li>
+            我的淘宝
+            <img src="img/more.png" alt="下拉" class="more" />
+        </li>
+        <li>
+            <img src="img/购物车.png" alt="购物车" class="icon" />购物车
+            <span class="orange_red small">1</span>
+            <img src="img/more.png" alt="下拉" class="more" />
+        </li>
+        <li>
+            <img src="img/收藏.png" alt="收藏夹" class="icon" />
+            收藏夹
+            <img src="img/more.png" alt="下拉" class="more" />
+        </li>
+        <li>
+            商品分类
+            <img src="img/竖线.png" alt="分隔"  class="icon" />
+        </li>
+        <li>
+            千牛卖家中心
+            <img src="img/more.png" alt="下拉" class="more" />
+        </li>
+        <li>
+            联系客服
+            <img src="img/more.png" alt="下拉" class="more" />
+        </li>
+        <li>
+            <img src="img/更多.png" alt="导航" class="icon" />
+            网站导航
+            <img src="img/more.png" alt="下拉" class="more" />
+        </li>
+    </ul>
+</div></div>
+<div id="container">
+    <div id="logo_and_search">
+        <a id="logo"><img src="img/logo.png" alt="淘宝购物车" /></a>
+        <div id="search">
+        <div id="input_area">
+            <div>
+                天 猫
+                <img src="img/more.png" alt="下拉" class="more" />
+            </div>
+            <ul id="search_type"></ul>
+            <img src="img/搜索.png" id="search_logo" alt="查找" />
+            <input type="text" />
+       </div>
+        <div id="to_search">搜 索</div>
+        </div>
+    </div>
+    <div id="pages_and_pay">
+        <ul>
+            <li class="page">
+                全部商品<span class="orange_red middle">3</span>
+            </li>
+            <li class="page">
+                降价商品<span class="orange_red middle">2</span>
+            </li>
+            <li class="page">
+                库存紧张<span class="orange_red middle">1</span>
+            </li>
+        </ul>
+        <div>
+            已选商品(不包含运费)：
+            <span>0.00</span>
+            <div>结算</div>
+        </div>
+    </div>
+    <div id="table_head">
+        <div id="check_all">
+            <input id="checkall" type="checkbox" />
+            <label for="checkall">全选</label>
+        </div>
+        <ul>
+            <li>商品信息</li>
+            <li>单价：</li>
+            <li>数量</li>
+            <li>金额</li>
+            <li>操作</li>
+        </ul>
+    </div>
 
+    <div id="goods">
+        <div class="shop">
+            <div class="shop_info">
+                <input class="shop_all" type="checkbox" />
+                <img src="img/淘.png" alt="淘" class="wang_wang" />
+                <span>店铺：</span>
+                <span class="shop_name">ACC CANDY</span>
+                <img src="img/旺旺.png" class="wang_wang" alt="旺旺" />
+            </div>
+            <ul class="goods_info_list">
+                <li class="goods_info">
+                    <div>
+                        <input type="checkbox" class="choose_goods" />
+                    </div>
+                    <ul class="info">
+                        <li>
+                            <img src="img/鞋.jpg" alt="商品图片" class="goods_img" />
+                        </li>
+                        <li>
+                            <p class="name_and_description">新百伦休闲鞋</p>
+                            <div class="services">
+                                <img src="img/保障服务.png" class="service" alt="服务" />
+                            </div>
+                        </li>
+                        <li>
+                            <p class="choice">官方套餐</p>
+                        </li>
+                        <li>
+                            <p class="per_price">￥39</p>
+                        </li>
+                        <li>
+                            <div class="reduce">-</div>
+                            <input type="text" class="quantity" min="1" />
+                            <div class="add">+</div>
+                        </li>
+                        <li>
+                           <span class="orange_red middle cost">0.00</span>
+                        </li>
+                        <li>
+                            <p class="add_collision">移入收藏夹</p>
+                            <p class="remove">删除</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="options_and_pay">
+        <ul>
+            <li>
+                <input type="checkbox" id="all" />
+                <label for="all">全选</label>
+            </li>
+            <li>
+                删除
+            </li>
+            <li>
+                移入收藏夹
+            </li>
+            <li>
+                分享
+            </li>
+            <li>
+                已选商品<span class="orange_red big">0</span>件
+                <img src="img/双上箭头.png" alt="上述" class="icon" />
+            </li>
+            <li>
+                合计（不含运费）：<span class="orange_red big">0.00</span>
+            </li>
+            <li>
+                结 算
+            </li>
+        </ul>
+    </div>
+</div>
 
 </body>
 </html>
