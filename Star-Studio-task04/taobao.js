@@ -4,6 +4,8 @@ window.onload = function () {
     whetherCheckAll_shop();
     changeQuantity();
     refresh();
+    removeOne();
+    removeAll();
 };
 
 //获取购物车商品数量
@@ -19,24 +21,21 @@ function getGoodsNumInCar() {
     }
 }
 
-//获取所有选取了的商品样数总和
-function getNumberOfAllGoods() {
+//检测是否有商品被选中
+function whetherChoosedGoods() {
   var aKinds = document.getElementsByClassName("choose_goods");
-  var aAllKinds = document.getElementsByClassName("all_kinds");
-  var sum = 0;
+  var sum = false;
 
   for(var j = 0; j < aKinds.length; j++)
   {
       if (aKinds[j]["checked"] === true)
       {
-        sum++;
+        sum = true;
+        break;
       }
   }
 
-  for(var i = 0; i < aAllKinds.length; i++)
-  {
-      aAllKinds[i].innerHTML = (sum).toString();
-  }
+  return sum;
 }
 
 //获取每种商品的消费总额
@@ -153,7 +152,7 @@ function unCheckAll() {
 }
 
 //所有店铺被选则全选被选
-function allShopChcked() {
+function allShopChecked() {
     var aShop = document.getElementsByClassName("shop_all");
     var aCheckAll = document.getElementsByClassName("checkall");
     var checked = true;
@@ -164,6 +163,10 @@ function allShopChcked() {
         {
             checked = false;
         }
+    }
+    if (aShop.length === 0)
+    {
+        checked = false;
     }
     aCheckAll[0]["checked"] = checked;
     aCheckAll[1]["checked"] = checked;
@@ -274,7 +277,8 @@ function refresh() {
     getAllCost();
     allShop();
     unCheckAll();
-    allShopChcked();
+    allShopChecked();
+    toPay();
 }
 
 //根据商铺全选的选中状态来判断点击时是全选还是全不选
@@ -364,4 +368,72 @@ function bindRefresh() {
     {
         aCheckbox[i]["onclick"] = refresh;
     }
+}
+
+//只要有商品被选中时结算按钮就要亮起
+function toPay() {
+    var goodsNumber = Number(document.getElementsByClassName("all_kinds")[0].innerHTML);
+    var aPay = document.getElementsByClassName("pay");
+    var pay = whetherChoosedGoods();
+    if (pay)
+    {
+        aPay[0].className = "to_pay pay";
+        aPay[1].className = "to_pay pay";
+    }
+    else
+    {
+        aPay[0].className = "not_to_pay pay";
+        aPay[1].className = "not_to_pay pay";
+    }
+}
+
+//单个删除商品
+function removeOne() {
+    var aRemove = document.getElementsByClassName("remove");
+
+    for (var i = 0; i < aRemove.length; i++)
+    {
+        aRemove[i]["onclick"] = function () {
+            //存放Ul对象
+            var goods_list = this.parentNode.parentNode.parentNode.parentNode;
+            //存放待删除的li对象
+            var goods_li = this.parentNode.parentNode.parentNode;
+
+            goods_list.removeChild(goods_li);
+            refresh();
+        }
+    }
+}
+
+//全选删除商品
+function removeAll() {
+    var oRemove_all = document.getElementById("remove_all");
+
+    oRemove_all["onclick"] = function () {
+        var checked_all = document.getElementsByClassName("checkall")[0]["checked"];
+        var goods = document.getElementById("goods");
+        if (checked_all)
+        {
+            var aShop = document.getElementsByClassName("shop");
+            var length = aShop.length;
+            for (var i = 0; i < length; i++)
+            {
+                goods.removeChild(aShop[0])
+            }
+        }
+        refresh();
+    }
+}
+
+//如果商铺内商品被全部删除则商铺被删除
+function removeShop() {
+    var aShop = document.getElementsByClassName("shop");
+
+}
+
+//取消全选
+function resetCheckedAll() {
+    var aCheckAll = document.getElementsByClassName("checkall");
+    aCheckAll[0]["checked"] = false;
+    aCheckAll[1]["checked"] = false;
 }

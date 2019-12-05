@@ -83,7 +83,7 @@ a{
 #options_and_pay{
     width: 100%;
     height: 50px;
-    background: rgb(210, 210, 210);
+    background: #e5e5e5;
 }
 #pages_and_pay{
     border-bottom: rgb(210, 210, 210) 2px solid;
@@ -196,6 +196,9 @@ a{
     text-align: center;
     user-select: none;
 }
+#pages_and_pay ul li:hover{
+    border-bottom: 2px orangered solid;
+}
 #pages_and_pay div{
     float: right;
     height: 100%;
@@ -211,7 +214,6 @@ a{
     width: 55px;
     height: 25px;
     line-height: 25px;
-    background: rgb(170, 170, 170);
     text-align: center;
     border-radius: 4px;
     margin-left: 10px;
@@ -232,19 +234,20 @@ a{
     float: left;
 }
 #table_head #check_all{
-    padding-left: 30px;
+    padding-left: 10px;
+    padding-right: 15px;
 }
 #table_head ul li:nth-child(1){
-    padding-left: 80px;
+    padding-left: 90px;
 }
 #table_head ul li:nth-child(2){
-    padding-left: 450px;
+    padding-left: 455px;
 }
 #table_head ul li:nth-child(3){
-    padding-left: 100px;
+    padding-left: 95px;
 }
 #table_head ul li:nth-child(4){
-    padding-left: 100px;
+    padding-left: 95px;
 }
 #table_head ul li:nth-child(5){
     padding-left: 150px;
@@ -280,10 +283,15 @@ a{
     float: right;
     display: inline-block;
     width: 120px;
-    background: gray;
     text-align: center;
     font-size: 20px;
     color: white;
+}
+.not_to_pay{
+    background: rgb(170, 170, 170);
+}
+.to_pay{
+    background: orangered;
 }
 #goods .shop .shop_info{
     height:38px;
@@ -295,6 +303,12 @@ a{
 #goods{
     width: 100%;
     height: auto;
+}
+.shop{
+    margin-bottom: 20px;
+}
+.shop .goods_info_list{
+    background: rgb(250, 250, 250);
 }
 .shop .goods_info_list,
 .shop .goods_info_list .info,
@@ -363,7 +377,7 @@ a{
     line-height: 20px;
     text-align: center;
     float: left;
-    background: rgb(210, 210, 210);
+    background: rgb(230, 230, 230);
     user-select: none;
 }
 .info li:nth-child(6){
