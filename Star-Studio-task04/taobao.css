@@ -44,6 +44,14 @@ a{
     height: auto;
     margin-bottom: -5px;
 }
+.remove{
+    padding-top: 10px;
+}
+.remove:hover,
+#remove_all_checked:hover{
+    color: red;
+}
+
 #navigator{
     height: 35px;
     width: 100%;

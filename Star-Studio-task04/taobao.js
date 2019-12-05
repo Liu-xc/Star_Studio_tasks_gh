@@ -5,7 +5,7 @@ window.onload = function () {
     changeQuantity();
     refresh();
     removeOne();
-    removeAll();
+    removeChecked();
 };
 
 //获取购物车商品数量
@@ -277,8 +277,9 @@ function refresh() {
     getAllCost();
     allShop();
     unCheckAll();
-    allShopChecked();
     toPay();
+    removeShop();
+    allShopChecked();
 }
 
 //根据商铺全选的选中状态来判断点击时是全选还是全不选
@@ -405,20 +406,21 @@ function removeOne() {
     }
 }
 
-//全选删除商品
-function removeAll() {
-    var oRemove_all = document.getElementById("remove_all");
+//删除商品选中的
+function removeChecked() {
+    var oRemove = document.getElementById("remove_all_checked");
 
-    oRemove_all["onclick"] = function () {
-        var checked_all = document.getElementsByClassName("checkall")[0]["checked"];
-        var goods = document.getElementById("goods");
-        if (checked_all)
+    oRemove["onclick"] = function () {
+        var aChecked = document.getElementsByClassName("choose_goods");
+        var length = aChecked.length;
+
+        for (var index = 0; index < length; index++)
         {
-            var aShop = document.getElementsByClassName("shop");
-            var length = aShop.length;
-            for (var i = 0; i < length; i++)
+
+            if (aChecked[index]["checked"] === true)
             {
-                goods.removeChild(aShop[0])
+                aChecked[index].parentNode.parentNode.parentNode.removeChild(aChecked[index].parentNode.parentNode);
+                index--;
             }
         }
         refresh();
@@ -428,7 +430,18 @@ function removeAll() {
 //如果商铺内商品被全部删除则商铺被删除
 function removeShop() {
     var aShop = document.getElementsByClassName("shop");
+    var goods;
+    var length = aShop.length;
 
+    for (var index = 0; index < length; index++)
+    {
+        goods = aShop[index].getElementsByClassName("goods_info");
+        if (goods.length === 0)
+        {
+            aShop[index].parentNode.removeChild(aShop[index]);
+            index--;
+        }
+    }
 }
 
 //取消全选

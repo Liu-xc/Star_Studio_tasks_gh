@@ -88,6 +88,7 @@
         </ul>
         <div>
             已选商品(不包含运费)：
+            <span class="orange_red middle">￥</span>
             <span class="all_cost">0.00</span>
             <div class="not_to_pay pay">结算</div>
         </div>
@@ -141,7 +142,7 @@
                             <input type="text" class="quantity" min="1" value="1" />
                             <div class="add">+</div>
                         </li>
-                        <li>
+                        <li class="orange_red middle">￥
                            <span class="orange_red middle cost">0.00</span>
                         </li>
                         <li>
@@ -187,7 +188,7 @@
                             <input type="text" class="quantity" min="1" value="1" />
                             <div class="add">+</div>
                         </li>
-                        <li>
+                        <li class="orange_red middle">￥
                             <span class="orange_red middle cost">0.00</span>
                         </li>
                         <li>
@@ -222,7 +223,42 @@
                             <input type="text" class="quantity" min="1" value="1" />
                             <div class="add">+</div>
                         </li>
+                        <li class="orange_red middle">￥
+                            <span class="orange_red middle cost">0.00</span>
+                        </li>
                         <li>
+                            <p class="add_collision">移入收藏夹</p>
+                            <p class="remove">删除</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="goods_info">
+                    <div>
+                        <input type="checkbox" class="choose_goods" />
+                    </div>
+                    <ul class="info">
+                        <li>
+                            <img src="img/鞋.jpg" alt="商品图片" class="goods_img" />
+                        </li>
+                        <li>
+                            <p class="name_and_description">新百伦休闲鞋</p>
+                            <div class="services">
+                                <img src="img/保障服务.png" class="service" alt="服务" />
+                            </div>
+                        </li>
+                        <li>
+                            <p class="choice">官方套餐</p>
+                        </li>
+                        <li>￥
+                            <span class="per_price">39.2</span>
+                        </li>
+                        <li>
+
+                            <div class="reduce">-</div>
+                            <input type="text" class="quantity" min="1" value="1" />
+                            <div class="add">+</div>
+                        </li>
+                        <li class="orange_red middle">￥
                             <span class="orange_red middle cost">0.00</span>
                         </li>
                         <li>
@@ -241,7 +277,7 @@
                 <input type="checkbox" class="checkall" />
                 全选
             </li>
-            <li id="remove_all">
+            <li id="remove_all_checked">
                 删除
             </li>
             <li>
@@ -255,7 +291,7 @@
                 <img src="img/双上箭头.png" alt="上述" class="icon" />
             </li>
             <li>
-                合计（不含运费）：<span class="orange_red big all_cost">0.00</span>
+                合计（不含运费）：<span class="orange_red big">￥</span><span class="orange_red big all_cost">0.00</span>
             </li>
             <li class="not_to_pay pay">
                 结 算
