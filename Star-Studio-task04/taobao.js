@@ -71,27 +71,6 @@ function getAllCost() {
     }
 }
 
-//店铺全选则店内商品全选
-function shopAll() {
-    var aShopAll = document.getElementsByClassName("shop_all");
-    var aShop = document.getElementsByClassName("shop");
-    var aChoices;
-    var j = 0;
-
-    //shopAll和shop并不一一对应，可能一个店铺内选了多个商品
-    for (var i = 0; i < aShopAll.length; i++)
-    {
-      if (aShopAll[i]["checked"] === true)
-      {
-          aChoices = aShop[i].getElementsByClassName("choose_goods");
-          for (j = 0; j < aChoices.length; j++)
-          {
-              aChoices[j]["checked"] = true;
-          }
-      }
-    }
-}
-
 //店内商品全选则店铺全选
 function allShop() {
   var aShopAll = document.getElementsByClassName("shop_all");
@@ -174,71 +153,6 @@ function allShopChecked() {
     }
     aCheckAll[0]["checked"] = checked;
     aCheckAll[1]["checked"] = checked;
-}
-
-//全选被选则所有checkbox被选
-function shopAllShop() {
-    var aCheckAll = document.getElementsByClassName("checkall");
-    var aCheckBox = document.getElementsByTagName("input");
-    //选择所有的input，之后对其中type为checkbox的进行操作
-
-    for (var i = 0; i < aCheckAll.length; i++)
-    {
-        if (aCheckAll[i]["checked"] === true)
-        {
-            for (var j = 0; j < aCheckBox.length; j++)
-            {
-                if (aCheckBox[j]["type"] === "checkbox")
-                {
-                    aCheckBox[j]["checked"] = true;
-                }
-            }
-            break;
-        }
-    }
-}
-
-//取消全选则全部商品被取消，店铺
-function uncheckShopAll() {
-    var aShopAll = document.getElementsByClassName("shop_all");
-    var aShop = document.getElementsByClassName("shop");
-    var aChoices;
-    var j = 0;
-
-    //shopAll和shop并不一一对应，可能一个店铺内选了多个商品
-    for (var i = 0; i < aShopAll.length; i++)
-    {
-        if (aShopAll[i]["checked"] === false)
-        {
-            aChoices = aShop[i].getElementsByClassName("choose_goods");
-            for (j = 0; j < aChoices.length; j++)
-            {
-                aChoices[j]["checked"] = false;
-            }
-        }
-    }
-}
-
-//取消全选则全部商品被取消，全部
-function uncheckShopAllShop() {
-    var aCheckAll = document.getElementsByClassName("checkall");
-    var aCheckBox = document.getElementsByTagName("input");
-//选择所有的input，之后对其中type为checkbox的进行操作
-
-    for (var i = 0; i < aCheckAll.length; i++)
-    {
-        if (aCheckAll[i]["checked"] === false)
-        {
-            for (var j = 0; j < aCheckBox.length; j++)
-            {
-                if (aCheckBox[j]["type"] === "checkbox")
-                {
-                    aCheckBox[j]["checked"] = false;
-                }
-            }
-            break;
-        }
-    }
 }
 
 //点击＋或-就增加或减少选取商品的数量，+，-和数量索引对应，如果已达到虽小数量1，则-不作用
@@ -444,13 +358,6 @@ function removeShop() {
             index--;
         }
     }
-}
-
-//取消全选
-function resetCheckedAll() {
-    var aCheckAll = document.getElementsByClassName("checkall");
-    aCheckAll[0]["checked"] = false;
-    aCheckAll[1]["checked"] = false;
 }
 
 //显示已选中商品数
