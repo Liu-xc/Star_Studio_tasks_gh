@@ -1,0 +1,336 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    min-width: 1200px;
+    background: rgb(238,248,255);
+    z-index: -2;
+}
+
+ul{
+    list-style: none;
+}
+
+.anchor{
+    text-decoration: none;
+    color: black;
+}
+
+#header{
+    min-width: 1200px;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: #e6e6e6;
+    z-index: 10;
+}
+#header #StudioIcon,
+#header #weather_icon{
+    margin-bottom: -10px;
+    height: 35px;
+    width: auto;
+}
+#header div{
+    float: right;
+    margin-right: 50px;
+
+}
+#header #pro_info{
+    margin-left: 15px;
+    font-size: 0.8em;
+    background: white;
+    border: grey 2px solid;
+    border-radius: 5px;
+    padding: 0 8px;
+}
+#header #StudioIcon{
+    margin-left: 50px;
+}
+#header #weather{
+    margin-left: 15px;
+    font-size: 0.8em;
+}
+
+#navigation{
+    margin-top: 3%;
+    margin-left: 10%;
+    position: absolute;
+    width: 15%;
+    z-index: 8;
+    min-width: 210px;
+}
+#navigation #guide_icon{
+    width: 25%;
+    height: auto;
+    float: left;
+}
+#navigation .title_text{
+    width: 70%;
+    display: inline-block;
+    float: left;
+    color: #0071bc;
+    margin-left: 5%;
+}
+#navigation .title{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10%;
+}
+#navigation #nav_body{
+    padding: 15% 0 15% 30%;
+    background: #6fabd3;
+}
+#navigation #nav_body .nav_class{
+    font-size: 1.3em;
+}
+#navigation #nav_body .anchor{
+    display: inline-block;
+    padding-top: 8px;
+}
+
+
+#container{
+    overflow: hidden;
+    z-index: -2;
+}
+#main{
+    min-width: 650px;
+    width: 45%;
+    height: auto;
+    padding-left: 15%;
+    margin: 60px auto 0;
+    z-index: -1;
+}
+#main #search ul{
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+#main #search ul li, .engines{
+    float: left;
+    display: inline-block;
+    padding: 0 7px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 5px 5px 0 0;
+}
+#main #search ul .chosen_engine{
+    background: white;
+}
+#main #search #input_text{
+    float: left;
+    border: none;
+    outline: none;
+    display: inline-block;
+    padding-left: 15px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    width: 75%;
+    height: 50px;
+}
+#main #search #search_icon{
+    float: right;
+    height: 25px;
+    width: auto;
+    padding-right: 15px;
+    margin-top: 12px;
+}
+#main #search #search_box{
+    width: 100%;
+    height: 50px;
+    background: white;
+    margin-bottom: 30px;
+    border-radius: 0 10px 10px 10px;
+}
+
+#main #picture_box{
+    border-radius: 10px;
+    background: white;
+    width: 100%;
+    /*   高度由JS动态调整   */
+    overflow: hidden;
+    margin-bottom: 10%;
+}
+#main #picture_list{
+
+    width: 100%;
+    height: auto;
+    /* overflow: hidden; */
+    -webkit-animation: move 20s linear infinite;
+    -o-animation: move 20s linear infinite;
+    animation: move 20s linear infinite;
+
+}
+@keyframes move{
+    from{transform: translateY(0)}
+    to{transform: translateY(-50%);}
+}
+#main #picture_list li{
+    /* float: left; */
+    width: 100%;
+    height: auto;
+}
+
+#main #picture_list .pictures{
+    width: 100%;
+    height: auto;
+}
+
+#main .links .leaf_icon{
+    width: 18%;
+    height: auto;
+    position: absolute;
+    top: -12%;
+    left: -5%;
+}
+#main .leaf_icon[src="img/小电社交.png"]{
+    top: -18%;
+}
+#main .leaf_icon[src="img/我的世界.png"]{
+    top: -45px;
+}
+#main .links{
+    padding-top: 7%;
+    width: 100%;
+    height: auto;
+    border: #bdccd4 2px solid;
+    border-radius: 20px;
+    margin-bottom: 80px;
+    position: relative;
+    background: white;
+}
+#main .links>div>div:first-child{
+    float: left;
+    width: 20%;
+    height: auto;
+    font-size: 1.2em;
+    padding-left: 5%;
+}
+#main .links>div>div:nth-child(2){
+    float: left;
+    width: 75%;
+    height: auto;
+}
+#main .links>div{
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+#main .links li{
+    float: left;
+    width: 25%;
+    padding-bottom: 20px;
+}
+#main .links li a{
+    text-decoration: none;
+    color: black;
+    font-size: 0.9em;
+}
+
+
+
+#footer{
+    height: 100px;
+    background: #008dd8;
+    line-height: 100px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#main .my_links{
+    float: left;
+    width: 20%;
+    margin: 0 2% 20px 3%;
+    height: 30px;
+    line-height: 50px;
+    border-radius: 30px;
+    background: #d7e7f2;
+    overflow: hidden;
+    text-align: center;
+}
+#main .my_links a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.1em;
+    width: 100%;
+    text-align: center;
+}
+#main .my_links:last-child:hover{
+    cursor: pointer;
+}
+#main #add_icon{
+    width: 15%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+#main .links>ul{
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+#add_link_form{
+    position: absolute;
+    width: 20vw;
+    min-width: 300px;
+    height: 12vw;
+    min-height: 200px;
+    background: #d7e7f2;
+    overflow: auto;
+    padding: 2%;
+    display: none;
+    box-shadow: #d7d7d7 7px 7px 7px;
+}
+#add_link_form::-webkit-scrollbar{
+    display: none;
+}
+#add_link_form fieldset{
+    border: none;
+}
+#add_link_form input{
+    border: none;
+    outline: none;
+    height: 30px;
+    margin-bottom: 20px;
+    width: 75%;
+    padding-left: 1em;
+}
+#add_link_form legend{
+    text-align: center;
+    width: 90%;
+    height: 2em;
+    line-height: 2em;
+    background: #b4d6f2;
+    margin-bottom: 2%;
+}
+#add_link_form ul{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+#add_link_form li{
+    float: left;
+    width: 40%;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    background: white;
+    border: #797979 1px solid;
+    margin: 4.5%;
+    font-size: 0.7em;
+    overflow: hidden;
+}
+#add_link_form input[type="button"][value="添加"]{
+    width: 30%;
+    border: none;
+    outline: none;
+    height: 30px;
+    margin-left: 35%;
+    padding: 0;
+    background: white;
+}

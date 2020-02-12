@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    min-width: 1200px;
+    z-index: -2;
+    background: #f2f2f2;
+}
+
+#header{
+    min-width: 1200px;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: #e6e6e6;
+    z-index: 10;
+}
+#header #StudioIcon,
+#header #weather_icon{
+    margin-bottom: -10px;
+    height: 35px;
+    width: auto;
+}
+#header div{
+    float: right;
+    margin-right: 50px;
+
+}
+#header #pro_info{
+    margin-left: 15px;
+    font-size: 0.8em;
+    background: white;
+    border: grey 2px solid;
+    border-radius: 5px;
+    padding: 0 8px;
+}
+#header #StudioIcon{
+    margin-left: 50px;
+}
+#header #weather{
+    margin-left: 15px;
+    font-size: 0.8em;
+}
+
+#login{
+    width: 20%;
+    min-width: 350px;
+    height: auto;
+    border: #797979 2px solid;
+    position: relative;
+    margin-left:auto;
+    margin-right: auto;
+    top: 30vh;
+    background: white;
+}
+#login h3{
+    text-align: center;
+    margin-top: 10px;
+    height: 35px;
+    line-height: 35px;
+}
+#login label{
+    display: inline-block;
+    width: 3em;
+    font-weight: bold;
+}
+#login input:not([type="submit"]){
+    border: #d7d7d7 1px solid;
+    outline: none;
+    padding-left: 1em;
+    height: 25px;
+    margin-top: 15px;
+    width: 70%;
+}
+#login fieldset{
+    padding-left: 2em;
+    padding-right: 2em;
+    border: none;
+    padding-bottom: 20px;
+}
+#login input[type="submit"]{
+    width: 25%;
+    border: #d7d7d7 1px solid;
+    outline: none;
+    height: 25px;
+    margin: 25px auto 10px;
+    display: block;
+}
+#login a{
+    display: block;
+    font-size: 0.8em;
+    width: 100%;
+    text-align: center;
+}
