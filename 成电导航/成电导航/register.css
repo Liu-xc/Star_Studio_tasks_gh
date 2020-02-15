@@ -7,7 +7,7 @@ body{
     width: 100%;
     min-width: 1200px;
     z-index: -2;
-    background: #f2f2f2;
+    background: #eef8ff;
 }
 
 #header{
@@ -47,13 +47,13 @@ body{
 }
 
 #register{
+    position: absolute;
     width: 20%;
     min-width: 350px;
     height: auto;
-    border: #797979 2px solid;
-    position: relative;
-    margin-left:auto;
-    margin-right: auto;
+    border: #4488b8 1px solid;
+    border-radius: 20px;
+    margin-left: 70%;
     top: 30vh;
     background: white;
 }
@@ -74,7 +74,9 @@ body{
     padding-left: 1em;
     height: 25px;
     margin-top: 15px;
-    width: 65%;
+    width: 70%;
+    border-radius: 10px;
+    background: #eef8ff;
 }
 #register fieldset{
     padding-left: 2em;
@@ -91,10 +93,18 @@ body{
     height: 25px;
 }
 #register input[type="submit"]{
-    margin: 25px auto 0;
-    border: #d7d7d7 1px solid;
+    width: 35%;
     outline: none;
     height: 25px;
-    width: 45%;
+    margin: 25px auto 10px;
     display: block;
+    border: #d7d7d7 1px solid;
+    background: #1a6da8;
+    color: white;
+}
+
+#background{
+    width: 100%;
+    height: auto;
+    margin-top: 15vh;
 }

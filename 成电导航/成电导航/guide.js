@@ -1,5 +1,5 @@
 window.onload = function () {
-    changeHeigh();
+    changeHeight();
     bindEngineFunc();
     bindUrlAddFunc();
     jQuery("#add_my_link").on("click", showForm);
@@ -7,6 +7,7 @@ window.onload = function () {
 
     let oSpan = document.getElementsByClassName("title_text")[0];
     oSpan["style"]["font-size"] = oSpan.offsetWidth * 0.20 + "px";
+    // alert(getURLByReg("http://www.baidu.com/http"));
 };
 
 function change_engine(){
@@ -62,6 +63,7 @@ function addSite() {
         "url": site_url
     };
 
+    // alert(site.name + site.url);
     if (!checkSite(site)){
         oA.text = site_name;
         oA.href = site_url;
@@ -75,7 +77,7 @@ function addSite() {
 }
 
 //修改图片高度
-function changeHeigh() {
+function changeHeight() {
     let p_b = jQuery("#picture_box");
     p_b.height(p_b.outerWidth() * 0.32);
 }
@@ -125,28 +127,38 @@ function addFilledSite() {
     let oLi = document.createElement("li");
     let oA = document.createElement("a");
     let oAddLi = document.getElementById("add_my_link");
+    let site = {
+        "name": site_name,
+        "url": site_url
+    };
 
     //要求网站名称和网址都要填写
     if (site_name && site_url){
-        oA.text = site_name;
-        oA.href = site_url;
-        oA.target = "_blank";
-        oLi.className = "my_links";
-        oLi.appendChild(oA);
+        if (!checkURLByReg(site_url)){
+            alert("URL不合法！");
+        } else {
+            if (!checkSite(site)) {
+                oA.text = site_name;
+                oA.href = site_url;
+                oA.target = "_blank";
+                oLi.className = "my_links";
+                oLi.appendChild(oA);
 
-        oAddLi.parentElement.insertBefore(oLi, oAddLi);
-        jQuery("#add_link_form").css("display", "none");
+                oAddLi.parentElement.insertBefore(oLi, oAddLi);
+                jQuery("#add_link_form").css("display", "none");
+            }
+        }
     }
     else {
         alert("请填写完整！");
     }
-
+    jQuery("#add_link_form").css("display", "none");
 }
 
 //遍历已添加的网站，创建数组保存，每一单元为对象
 function getAddedSites() {
     let aLinks = document.querySelectorAll(".links>ul>li>a");
-    let len = aLinks.length - 1;
+    let len = aLinks.length;
     let aAddedSites = [];
 
     for (let i = 0; i < len; i++){
@@ -167,8 +179,11 @@ function checkSite(site_obj) {
 
     for (let i = 0; i < len; i++){
         //名称或连接相同都算重复
-        flag = (site_obj["name"] === aAddedSites[i]["name"])||(site_obj["url"] === aAddedSites[i]["url"]);
+        flag = (site_obj["url"] === aAddedSites[i]["url"])||(site_obj["name"] === aAddedSites[i]["name"]);
+        // alert(site_obj.name + site_obj.url + "\t" + aAddedSites[i]["name"] + aAddedSites[i]["url"]);
         if (flag){
+            alert("重复添加！");
+            jQuery("#add_link_form").css("display", "none");
             break;
         }
     }
@@ -189,3 +204,11 @@ window.onscroll = function () {
     }
 
 };
+
+//正则匹配返回用户输入的网址
+function checkURLByReg(url) {
+
+    let regexp = /((http|https):\/\/([\w\-]+\.)+[\w\-]+(\/[\w\u4e00-\u9fa5\-\.\/?\@\%\!\&=\+\~\:\#\;\,]*)?)/ig;
+    url = url.match(regexp);
+    return url;
+}

@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a8cc25d-b51e-4160-9d7f-a0cc6c4e3df6" name="Default Changelist" comment="" />
+    <list default="true" id="8a8cc25d-b51e-4160-9d7f-a0cc6c4e3df6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/成电导航.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/成电导航/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/成电导航/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/成电导航/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/成电导航/.idea/成电导航.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/成电导航/guide.js" beforeDir="false" afterPath="$PROJECT_DIR$/成电导航/guide.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/成电导航/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/成电导航/login.css" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,36 +22,13 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="DockManager">
-    <window id="3">
-      <content type="file-editors">
-        <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/成电导航/guide.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="444">
-                    <caret line="64" column="29" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
-                    <folding>
-                      <element signature="n#!!block;n#change_engine#0" />
-                      <element signature="n#!!block;n#getPagePosition#0" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/成电导航/guide.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="213" column="18" selection-start-line="213" selection-start-column="18" selection-end-line="213" selection-end-column="18" />
+            <state relative-caret-position="252">
+              <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" />
@@ -50,14 +38,49 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/成电导航/img/导航图标.png">
-          <provider selected="true" editor-type-id="images" />
+        <entry file="file://$PROJECT_DIR$/成电导航/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="644">
+              <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/成电导航/login.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-616">
+              <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/成电导航/guide.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="293">
+              <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
+              <folding>
+                <element signature="e#28#353#0" />
+                <element signature="n#!!block;n#change_engine#0" />
+                <element signature="n#!!block;n#bindUrlAddFunc#0" />
+                <element signature="n#!!block;n#changeHeigh#0" />
+                <element signature="n#!!block;n#bindEngineFunc#0" />
+                <element signature="n#!!block;n#showForm#0" />
+                <element signature="n#!!block;n#getPagePosition#0" />
+                <element signature="n#!!block;n#addFilledSite#0" />
+                <element signature="n#!!block;n#getAddedSites#0" />
+                <element signature="n#!!block;n#checkSite#0" />
+                <element signature="e#4867#5213#0" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/成电导航/guide.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6075">
+            <state relative-caret-position="6300">
               <caret line="225" selection-start-line="225" selection-end-line="225" />
             </state>
           </provider>
@@ -86,6 +109,9 @@
       <replace>#login</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -97,23 +123,27 @@
         <option value="$PROJECT_DIR$/成电导航/register.html" />
         <option value="$PROJECT_DIR$/成电导航/login.html" />
         <option value="$PROJECT_DIR$/成电导航/register.css" />
-        <option value="$PROJECT_DIR$/成电导航/login.css" />
-        <option value="$PROJECT_DIR$/成电导航/guide.js" />
         <option value="$PROJECT_DIR$/成电导航/guide.css" />
         <option value="$PROJECT_DIR$/成电导航/guide.html" />
+        <option value="$PROJECT_DIR$/成电导航/login.css" />
+        <option value="$PROJECT_DIR$/成电导航/guide.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1535" />
-    <option name="width" value="1195" />
-    <option name="height" value="1100" />
+    <option name="x" value="240" />
+    <option name="y" value="127" />
+    <option name="width" value="1440" />
+    <option name="height" value="774" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -136,12 +166,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/成电导航" />
@@ -178,16 +207,18 @@
       <workItem from="1581428296534" duration="7488000" />
       <workItem from="1581472627460" duration="31860000" />
       <workItem from="1581517898023" duration="33000" />
+      <workItem from="1581563841588" duration="682000" />
+      <workItem from="1581589449234" duration="402000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75740000" />
+    <option name="totallyTimeSpent" value="76824000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1927" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21045576" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.121313676" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -233,20 +264,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/成电导航/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/成电导航/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="819">
-          <caret line="96" column="22" selection-start-line="96" selection-start-column="22" selection-end-line="96" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/成电导航/register.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="549">
@@ -254,34 +271,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/成电导航/guide.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="213" column="18" selection-start-line="213" selection-start-column="18" selection-end-line="213" selection-end-column="18" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/成电导航/img/导航图标.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/成电导航/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/成电导航/guide.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6075">
+        <state relative-caret-position="6300">
           <caret line="225" selection-start-line="225" selection-end-line="225" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/成电导航/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-616">
+          <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/成电导航/guide.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="64" column="29" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
+        <state relative-caret-position="293">
+          <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
           <folding>
+            <element signature="e#28#353#0" />
             <element signature="n#!!block;n#change_engine#0" />
+            <element signature="n#!!block;n#bindUrlAddFunc#0" />
+            <element signature="n#!!block;n#changeHeigh#0" />
+            <element signature="n#!!block;n#bindEngineFunc#0" />
+            <element signature="n#!!block;n#showForm#0" />
             <element signature="n#!!block;n#getPagePosition#0" />
+            <element signature="n#!!block;n#addFilledSite#0" />
+            <element signature="n#!!block;n#getAddedSites#0" />
+            <element signature="n#!!block;n#checkSite#0" />
+            <element signature="e#4867#5213#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/成电导航/guide.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
